@@ -1,4 +1,6 @@
 class AssignmentsController < ApplicationController
+  before_action :authenticate!
+
   def show
     @assignment = Assignment.find params[:id]
   end
