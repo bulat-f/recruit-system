@@ -18,6 +18,7 @@ gem 'materialize-sass', '~> 0.98'
 
 gem 'uglifier',     '>= 1.3.0'
 gem 'coffee-rails', '~> 4.2'
+gem 'jquery-rails', '~> 4.3'
 gem 'turbolinks',   '~> 5'
 
 gem 'jbuilder',     '~> 2.5'
