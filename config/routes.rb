@@ -9,6 +9,6 @@ Rails.application.routes.draw do
 
   resources :locations
   resources :cleaners
-  resources :permanents,   controller: :assignments, type: 'Permanents'
+  resources :permanents,   controller: :assignments, type: 'Permanent'
   resources :replacements, controller: :assignments, type: 'Replacement'
 end
