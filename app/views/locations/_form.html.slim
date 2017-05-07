@@ -1,0 +1,32 @@
+.row
+  = form_for location, html: { class: 'col s12' } do |f|
+    .row
+      .input-field.col.s6
+        = f.text_field :title
+        = f.label :title
+
+      .input-field.col.s6
+        = f.text_field :zip_code
+        = f.label :zip_code
+
+    .row
+      .input-field.col.s6
+        = f.text_field :street_number
+        = f.label :street_number
+
+      .input-field.col.s6
+        = f.text_field :street_name
+        = f.label :street_name
+
+    .row
+      .input-field.col.s6
+        = f.text_field :city
+        = f.label :city
+
+      .input-field.col.s6
+        = f.text_field :state
+        = f.label :state
+
+    .row
+      .input-field.col.s12
+        = f.submit (location.new_record? ? 'Register Location' : 'Edit Location Details'), class: 'btn waves-effect waves-light'

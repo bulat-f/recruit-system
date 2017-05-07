@@ -6,4 +6,7 @@ Rails.application.routes.draw do
     post   'login'  => :create
     delete 'logout' => :destroy
   end
+
+  resources :locations
+  resources :cleaners
 end
