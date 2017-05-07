@@ -27,7 +27,8 @@ gem 'slim-rails',   '~> 3.1'
 gem 'figaro'
 gem 'jwt'
 
-gem 'geocoder', '~> 1.4'
+gem 'geocoder',               '~> 1.4'
+gem 'google_distance_matrix', '~> 0.4'
 
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby

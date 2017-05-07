@@ -12,4 +12,8 @@ class Location < ApplicationRecord
   def address
     [street, city, state, zip_code, 'US'].join
   end
+
+  def google_place
+    GoogleDistanceMatrix::Place.new lng: longitude, lat: latitude
+  end
 end

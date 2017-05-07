@@ -1,6 +1,17 @@
 .section.no-pad-bot
   .container
     h2.header.center Recruit #{@assignment.type} Cleaner
-    p= @assignment.zip_code
-    p= @assignment.radius
-    p= @assignment.message
+    .row
+      .col.s12
+        p= @assignment.zip_code
+        p= @assignment.radius
+        p= @assignment.message
+
+    table
+      thead
+        tr
+          th Cleaner
+          th Distance
+          th Duration
+      tbody
+        = render partial: 'distance_to_cleaner', collection: @assignment.distances_to_cleaners(Cleaner.all)
