@@ -4,4 +4,8 @@ class Cleaner < ApplicationRecord
 
   validates :name, presence: true
   validates :phone, presence: true
+
+  def to_s
+    name
+  end
 end

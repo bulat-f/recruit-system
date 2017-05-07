@@ -5,6 +5,10 @@ class Location < ApplicationRecord
   geocoded_by :address
   after_validation :geocode
 
+  def to_s
+    title
+  end
+
   def street
     [street_number, street_name].join ' '
   end
