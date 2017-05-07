@@ -1,0 +1,14 @@
+.section.no-pad-bot#index-banner
+  .container
+    h2.header.center.orange-text Luce Maintenance Group Recruit System
+    .row.center
+      h5.header.col.s12.light Login to System as Admin
+      = form_for :session, html: { class: 'col offset-s3 s6' } do |f|
+        .row
+          .input-field.col.s12
+            = f.password_field :password
+            = f.label :password
+
+        .row
+          .input-field.col.s12
+            = f.submit 'Login', class: 'btn waves-effect waves-light orange'
