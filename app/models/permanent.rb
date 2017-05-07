@@ -1,0 +1,2 @@
+class Permanent < Assignment
+end

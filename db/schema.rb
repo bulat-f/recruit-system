@@ -10,10 +10,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170507083334) do
+ActiveRecord::Schema.define(version: 20170507153543) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "assignments", force: :cascade do |t|
+    t.string "zip_code", null: false
+    t.integer "radius", null: false
+    t.text "message", null: false
+    t.string "type"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "cleaners", force: :cascade do |t|
     t.string "name", null: false

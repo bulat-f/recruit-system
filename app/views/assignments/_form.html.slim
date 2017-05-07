@@ -1,0 +1,20 @@
+.row
+  = form_for assignment, html: { class: 'col offset-s3 s6' } do |f|
+    .row
+      .input-field.col.s12
+        = f.text_field :zip_code
+        = f.label :zip_code
+
+    .row
+      .input-field.col.s12
+        = f.select :radius, radius_list
+        = f.label :radius
+
+    .row
+      .input-field.col.s12
+        = f.text_area :message
+        = f.label :message
+
+    .row
+      .input-field.col.s12
+        = f.submit (assignment.new_record? ? 'Register Assignment' : 'Edit Assignment Details'), class: 'btn waves-effect waves-light'
